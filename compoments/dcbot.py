@@ -36,11 +36,9 @@ class Bot(commands.Bot):
             for command_name, image_url in commands_data.items():
                 self.add_dynamic_command(command_name, image_url)
 
-        # 添加星座命令
         self.add_astro_commands()
 
     def add_dynamic_command(self, command_name, image_url):
-        # 创建动态命令
         @self.command(name=command_name)
         async def dynamic_command(ctx):
             await ctx.send(image_url)
