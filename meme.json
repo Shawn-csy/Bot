@@ -1,0 +1,14 @@
+memedb =
+{
+  'date': date.today,
+  'meme': {
+    'id': 'id',
+    'name': 'name',
+    'tag': [
+      'tag1',
+      'tag2',
+      'tag3'
+    ]
+  }
+}
+
